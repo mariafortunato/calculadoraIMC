@@ -17,7 +17,7 @@
         android:background="@drawable/edit_campo"
         android:ems="10"
         android:hint="1.65"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:padding="10dp"
         android:textColorHint="@color/verdeLetraBorda"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
         android:background="@drawable/edit_campo"
         android:ems="10"
         android:hint="85.5"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:padding="10dp"
         android:textColorHint="@color/verdeLetraBorda"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,11 +49,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:background="@color/verdeBackground"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/btnMainCalcular"
         app:layout_constraintStart_toEndOf="@+id/btnMainCalcular"
         app:layout_constraintTop_toTopOf="@+id/btnMainCalcular"
         app:layout_constraintVertical_bias="0.55"
-        app:srcCompat="@drawable/ic_baseline_refresh_24" />
+        app:srcCompat="@drawable/ic_baseline_refresh_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btnMainCalcular"

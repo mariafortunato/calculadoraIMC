@@ -49,9 +49,14 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.btnMainLimpar.setOnClickListener{
+            binding.editMainAltura.setText("")
+            binding.editMainPeso.setText("")
+            binding.txtResultado.setText("")
+            binding.txtResultado.setBackgroundResource(R.drawable.fundo_txt_resultado_verde)
+        }
         binding.btnMainInfos.setOnClickListener {
-            val myIntent = Intent(this, InformacoesActivity::class.java)
-            startActivity(myIntent)
+
         }
     }
 }
