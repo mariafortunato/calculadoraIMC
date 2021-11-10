@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
             binding.txtResultado.setBackgroundResource(R.drawable.fundo_txt_resultado_verde)
         }
         binding.btnMainInfos.setOnClickListener {
+            val mIntent = Intent(this, InfosActivity::class.java)
+            startActivity(mIntent)
 
         }
     }

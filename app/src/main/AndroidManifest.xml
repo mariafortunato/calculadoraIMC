@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculadoraIMC">
         <activity
+            android:name=".InfosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Teste"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -20,9 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

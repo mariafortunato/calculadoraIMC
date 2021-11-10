@@ -4,6 +4,195 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfosActivity">
+    tools:context=".InfosActivity"
+    android:background="@color/verdeBackground">
 
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.394"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calculadora" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="40dp"
+                android:text="O que é IMC?"
+                android:textColor="#5400FF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="334dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="40dp"
+                android:text="     IMC significa índice de Massa Corporal, é um parâmetro adotado pela Organização Mundial de Saúde para calcular  se a pessoa está dentro do peso."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="Como é feito o calculo"
+                android:textColor="#5400FF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="100dp"
+                android:text="imc = peso / (altura*altura)"
+                android:textColor="#156CEB"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="40dp"
+                android:text="      É o peso dividido por altura vezes altura. O peso deve estar em kg e a altura em metros.      \nDepois obter o  resultado, é possível verificar em que faixa o IMC se encontra:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:stretchColumns="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <TableRow
+                    android:background="@color/verdeBackground"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="162dp"
+                        android:padding="6dp"
+                        android:text="IMC" />
+
+                    <TextView
+                        android:text="Classificação"
+                        android:padding="6dp"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/verdeBackground"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:text="Menor que 18.5"
+                        android:padding="6dp"/>
+                    <TextView
+                        android:text="Abaixo do peso"
+                        android:padding="6dp"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/verdeBackground"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:text="Entre 18.5 e 29.9"
+                        android:padding="6dp"/>
+                    <TextView
+                        android:text="Peso ideal"
+                        android:padding="6dp"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/verdeBackground"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:text="Entre 25 e 29.9"
+                        android:padding="6dp"/>
+                    <TextView android:text="Sobrepeso"
+                        android:padding="6dp"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/verdeBackground"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:text="Maior que 30"
+                        android:padding="6dp"/>
+                    <TextView
+                        android:text="Obesidade"
+                        android:padding="6dp"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnVoltarMain"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_calcular"
+                android:text="Voltar"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
