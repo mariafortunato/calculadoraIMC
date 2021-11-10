@@ -35,16 +35,16 @@ class MainActivity : AppCompatActivity() {
                 val decimal = DecimalFormat("##.##")
 
                 if (imc < 18.5) {
-                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}. \nAbaixo do peso"
+                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}%. \nAbaixo do peso"
                     binding.txtResultado.setBackgroundResource(R.drawable.txt_abaixo_acima_peso)
                 } else if (imc >= 18.5 && imc < 25) {
-                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}. \nPeso ideal"
+                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}%. \nPeso ideal"
                     binding.txtResultado.setBackgroundResource(R.drawable.txt_peso_ideal)
                 } else if (imc >= 25 && imc < 30){
-                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}. \nSobrepeso"
+                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}%. \nSobrepeso"
                     binding.txtResultado.setBackgroundResource(R.drawable.txt_sobrepeso)
                 } else {
-                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}. \nObesidade"
+                    binding.txtResultado.text = "Seu IMC é: ${decimal.format(imc)}%. \nObesidade"
                     binding.txtResultado.setBackgroundResource(R.drawable.txt_abaixo_acima_peso)
                 }
             }
