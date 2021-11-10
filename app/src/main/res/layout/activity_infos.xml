@@ -33,14 +33,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/calculadora" />
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
                 android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
                 android:text="O que é IMC?"
-                android:textColor="#5400FF"
+                android:textColor="@color/roxoLetra"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView4"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -60,14 +61,15 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
                 android:text="Como é feito o calculo"
-                android:textColor="#5400FF"
+                android:textColor="@color/roxoLetra"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView6"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -92,7 +94,7 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="119dp"
+                android:layout_height="128dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="40dp"
@@ -109,70 +111,87 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="40dp"
+                android:background="@drawable/linearlayout_card_shadow"
                 android:stretchColumns="1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6">
 
                 <TableRow
-                    android:background="@color/verdeBackground"
                     android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="162dp"
+                        android:background="@color/verdeLetraBorda"
+                        android:fontFamily="sans-serif-medium"
                         android:padding="6dp"
-                        android:text="IMC" />
+                        android:text="IMC"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
 
                     <TextView
+                        android:background="@color/verdeLetraBorda"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="6dp"
                         android:text="Classificação"
-                        android:padding="6dp"/>
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
                 </TableRow>
                 <TableRow
-                    android:background="@color/verdeBackground"
                     android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="153dp"
+                        android:padding="6dp"
                         android:text="Menor que 18.5"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
+
                     <TextView
+                        android:padding="6dp"
                         android:text="Abaixo do peso"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
                 </TableRow>
                 <TableRow
-                    android:background="@color/verdeBackground"
                     android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="153dp"
+                        android:padding="6dp"
                         android:text="Entre 18.5 e 29.9"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
+
                     <TextView
+                        android:padding="6dp"
                         android:text="Peso ideal"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
                 </TableRow>
                 <TableRow
-                    android:background="@color/verdeBackground"
                     android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="153dp"
+                        android:padding="6dp"
                         android:text="Entre 25 e 29.9"
-                        android:padding="6dp"/>
-                    <TextView android:text="Sobrepeso"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:padding="6dp"
+                        android:text="Sobrepeso"
+                        android:textSize="16sp" />
                 </TableRow>
                 <TableRow
-                    android:background="@color/verdeBackground"
                     android:layout_width="match_parent">
 
                     <TextView
                         android:layout_width="153dp"
+                        android:padding="6dp"
                         android:text="Maior que 30"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
+
                     <TextView
+                        android:padding="6dp"
                         android:text="Obesidade"
-                        android:padding="6dp"/>
+                        android:textSize="16sp" />
                 </TableRow>
 
             </TableLayout>
@@ -186,8 +205,11 @@
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/btn_calcular"
+                android:fontFamily="@font/amiko_semibold"
                 android:text="Voltar"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
