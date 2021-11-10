@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/edit_campo"
+        android:digits="0123456789.,"
         android:ems="10"
         android:hint="1.65"
         android:inputType="number"
@@ -33,6 +34,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/edit_campo"
+        android:digits="0123456789.,"
         android:ems="10"
         android:hint="85.5"
         android:inputType="number"
@@ -98,7 +100,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-medium"
         android:shadowColor="@color/verdeLetraEscura"
         android:text="Sua altura:"
@@ -106,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="@+id/editMainAltura"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editMainAltura"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView8"
@@ -121,20 +123,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editMainPeso"
         app:layout_constraintTop_toBottomOf="@+id/editMainAltura" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="100dp"
-        android:text="Calculadora de IMC"
-        android:textColor="@color/verdeLetraEscura"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtResultado"
@@ -153,4 +141,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMainInfos"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calculadora" />
 </androidx.constraintlayout.widget.ConstraintLayout>

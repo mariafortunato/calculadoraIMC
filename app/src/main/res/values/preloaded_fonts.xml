@@ -2,5 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/amiko_semibold</item>
+        <item>@font/andika</item>
+        <item>@font/arima_madurai_bold</item>
+        <item>@font/biryani_semibold</item>
+        <item>@font/cambay_bold</item>
+        <item>@font/maven_pro_medium</item>
     </array>
 </resources>
